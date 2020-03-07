@@ -1,0 +1,35 @@
+22:55:17.230 karate.env system property was: null 
+22:55:17.827 request:
+1 > GET https://cybertek-reservation-api-qa.herokuapp.com/sign?email=teacherva5%40gmail.com&password=maxpayne
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/12.0.2)
+
+22:55:20.554 response time in milliseconds: 2717.22
+1 < 200
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Sat, 07 Mar 2020 03:55:21 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+{"accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyMDY0IiwiYXVkIjoidGVhY2hlciJ9.japWZkmQ3ExAJA6HxXEMSm92h5ZfYARx1Ci8sSiLgzM","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyMDY0IiwiYXVkIjoidGVhY2hlciJ9.japWZkmQ3ExAJA6HxXEMSm92h5ZfYARx1Ci8sSiLgzM"}
+
+22:55:20.580 [print] Token:  eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyMDY0IiwiYXVkIjoidGVhY2hlciJ9.japWZkmQ3ExAJA6HxXEMSm92h5ZfYARx1Ci8sSiLgzM
+22:55:20.585 request:
+2 > GET https://cybertek-reservation-api-qa.herokuapp.com/api/rooms
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: cybertek-reservation-api-qa.herokuapp.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/12.0.2)
+
+22:55:20.643 response time in milliseconds: 56.53
+2 < 422
+2 < Connection: close
+2 < Content-Type: text/html;charset=utf-8
+2 < Date: Sat, 07 Mar 2020 03:55:23 GMT
+2 < Server: Jetty(9.4.8.v20171121)
+2 < Via: 1.1 vegur
+empty or invalid sign.
+
+22:55:20.644 status code was: 422, expected: 401, response time: 57, url: https://cybertek-reservation-api-qa.herokuapp.com/api/rooms, response: empty or invalid sign.
